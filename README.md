@@ -63,6 +63,9 @@ Since this is a demo:
 - **Username**: `user001`  
 - **Password**: `pass001`
 
+👉 [Try Quick Demo with Pre-filled Data](#-quick-demo-fast-track-with-example-profile)
+Or follow the steps below to explore the app yourself:
+
 #### Steps:
 1. Log in using the demo credentials.
 2. Fill out your profile — add name, email, LinkedIn, education, work experience, and skills.
@@ -72,6 +75,25 @@ Since this is a demo:
 4. Click **Generate Resume & Cover Letter**.
 5. Edit or fine-tune the generated content directly or using the **Chat with AI Assistant**.
 6. Download as **PDF** or **DOCX**, or **Save to your profile**.
+
+#### 🚀 Quick Demo (Fast-Track with Dummy Data)
+
+To fast-track your experience, try the app with a pre-filled example based on **George P. Burdell**:
+
+1. [⬇️ Download `user_data.json`](https://example.com/path-to-user_data.json)  
+   Place this file directly inside your **`ResumeCraftAI`** project folder.  
+   > If there's already a file with the same name, replace it.  
+   This will **pre-populate your profile** with George’s details.
+
+2. [⬇️ Download George P. Brudell’s Resume (.docx)](https://example.com/path-to-resume.docx)  
+   Use this when uploading an existing resume on the Resume Generator tab.
+
+3. **Open the app**, go to the **Resume Generator tab**, and:
+   - Paste any **real job title and description** (e.g., from LinkedIn).
+   - Upload George’s resume.
+   - Click **Generate Resume** to see a custom resume and cover letter built instantly.
+
+This allows you to skip form-filling and directly explore the AI capabilities.
 
 ---
 ### 📦 Tech Stack
