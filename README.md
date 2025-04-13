@@ -1,5 +1,5 @@
 # ResumeCraft AI
-A full-stack AI-powered resume and cover letter generator built with React + Flask + OpenAI.
+A full-stack resume and cover letter generator built with React + Flask + OpenAI.
 
 ## Description
 
@@ -98,4 +98,12 @@ Since this is a demo:
 ### 📄 License
 **MIT License** — feel free to use, modify, and contribute!
 
+---
+
+### 👥 Authors
+
+- Sandoval Carpio, Adrian  
+- Ravipally, Rahul Reddy  
+- Mammadov, Shahbaba  
+- Singh, Medha
 
