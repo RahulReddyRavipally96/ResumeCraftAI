@@ -1,129 +1,101 @@
-<<<<<<< HEAD
-# ResumeCraft
-=======
+# ResumeCraft AI
+A full-stack AI-powered resume and cover letter generator built with React + Flask + OpenAI.
 
-# ResumeCraft
+## Description
 
-This is a Flask API for generating resumes and cover letters based on user profiles and job descriptions.
+ResumeCraft AI helps users create tailored, ATS-friendly resumes and personalized cover letters based on job descriptions. Users can upload existing resumes, maintain a profile, and chat with an AI assistant to fine-tune their application materials.
 
-## Setup Instructions
+---
 
-### Prerequisites
-- Python 3.7 or higher
-- pip (Python package installer)
+## 🛠️ How to Run the App
 
-### Installation
-
-1. Clone this repository:
+### Step 1. **Clone the repository**
 ```bash
-git clone <repository-url>
-cd resume-generator-api
+git clone https://github.com/your-username/ResumeCraftAI.git
+cd ResumeCraftAI
 ```
-
-2. Create a virtual environment (optional but recommended):
+### Step 2. **Add Your OpenAI API Key**
+Open `app.py` and replace `line 30`:
+```
+client = OpenAI(api_key="YOUR_API_KEY_HERE")
+```
+### Step 3. **Run the Backend (Python Flask)**
 ```bash
+# Create and activate a virtual environment
 python -m venv venv
-```
 
-3. Activate the virtual environment:
-   - On Windows:
-   ```bash
+# On Windows:
    venv\Scripts\activate
-   ```
-   - On macOS and Linux:
-   ```bash
+
+# On macOS and Linux:
    source venv/bin/activate
-   ```
 
-4. Install dependencies:
-```bash
+# Install dependencies
 pip install -r requirements.txt
-```
 
-### Running the API
+# If you face proxy issues:
+pip install httpx==0.27.2
 
-Start the Flask development server:
-```bash
+# Start the Flask server
 python app.py
 ```
 
-The API will be available at `http://localhost:5000`.
+### Step 4. Run the Frontend (React)
 
-## API Endpoints
-
-### Generate Resume
-- **URL**: `/api/resume/generate`
-- **Method**: POST
-- **Request Body**:
-  ```json
-  {
-    "jobTitle": "Software Engineer",
-    "jobDescription": "Job description here...",
-    "education": [...],
-    "workExperience": [...],
-    "skills": [...],
-    "existingResumeFormat": "Optional existing resume for formatting"
-  }
-  ```
-- **Response**: Generated resume and cover letter content
-
-### Get User Profile
-- **URL**: `/api/profile`
-- **Method**: GET
-- **Response**: User profile data including education, work experiences, skills, and saved documents
-
-### Update User Profile
-- **URL**: `/api/profile/update`
-- **Method**: POST
-- **Request Body**: Profile data to update
-- **Response**: Success message
-
-### Update Education Entry
-- **URL**: `/api/profile/education/:id/update`
-- **Method**: POST
-- **Request Body**: Education data to update
-- **Response**: Success message
-
-### Update Work Experience Entry
-- **URL**: `/api/profile/experience/:id/update`
-- **Method**: POST
-- **Request Body**: Experience data to update
-- **Response**: Success message
-
-### Download Document
-- **URL**: `/api/document/download`
-- **Method**: POST
-- **Request Body**:
-  ```json
-  {
-    "content": "Document content in markdown format",
-    "fileName": "FileName",
-    "format": "pdf" or "docx"
-  }
-  ```
-- **Response**: File download
-
-## Features
-
-- Generate professional resumes and cover letters
-- Upload existing resumes to maintain formatting
-- Edit generated documents before saving
-- Download documents in PDF or Word format
-- Store and edit multiple education and work experience entries
-
-## Additional Python Dependencies
-
-For document generation, the API requires:
-- markdown
-- xhtml2pdf
-- python-docx
-
-These packages will be automatically installed when running app.py, or you can install them manually:
 ```bash
-pip install markdown xhtml2pdf python-docx
+npm install
+npm run dev
 ```
+Your app will be live at:  
+🌐 [http://localhost:8080](http://localhost:8080)
 
-## Connecting to the React Frontend
+---
 
-The React frontend will connect to this API automatically through the ResumeService component.
->>>>>>> 755eb2c (Initial commit)
+### 👨‍💻 How to use the App
+
+Since this is a demo:
+
+- **Username**: `user001`  
+- **Password**: `pass001`
+
+#### Steps:
+1. Log in using the demo credentials.
+2. Fill out your profile — add name, email, LinkedIn, education, work experience, and skills.
+3. Head to the **Resume Generator** tab:
+   - Paste your target job title and job description.
+   - Upload an existing resume (docx) to include additional information.
+4. Click **Generate Resume & Cover Letter**.
+5. Edit or fine-tune the generated content directly or using the **Chat with AI Assistant**.
+6. Download as **PDF** or **DOCX**, or **Save to your profile**.
+
+---
+### 📦 Tech Stack
+
+- **Frontend**: React + Vite + Tailwind CSS  
+- **Backend**: Python + Flask + OpenAI API  
+- **PDF & DOCX Generation**: ReportLab, python-docx  
+- **State & Storage**: JSON files (can be extended to DB later)
+
+---
+
+### 📌 Notes
+- All AI generations are based on **OpenAI's gpt-4o-mini**.
+- Your profile and chat history are stored **locally in JSON format**.
+---
+
+### 🧠 Next Steps (Future Scope)
+
+- [ ] Add user authentication and role-based access.
+- [ ] Migrate from JSON files to a proper database (e.g., Firebase, PostgreSQL).
+- [ ] Support multiple resume templates.
+- [ ] Integrate AI-based feedback scoring for resumes and cover letters.
+- [ ] Agent AI – Enable true automation beyond responses:
+  - Let users give natural language commands like "Format my resume like my uploaded version."
+  - Use custom backend code to parse and apply formatting (not handled by OpenAI).
+  - Orchestrate multiple API calls based on inferred user intent.
+---
+
+### 📄 License
+**MIT License** — feel free to use, modify, and contribute!
+
+
