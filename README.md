@@ -1,9 +1,14 @@
-# ResumeCraft AI
-A full-stack resume and cover letter generator built with React + Flask + OpenAI.
+<div align="center">
+  <img 
+    src="https://github.com/user-attachments/assets/be4b6bd9-3c10-4878-b55f-2c63b007f434" 
+    alt="icon" 
+    width="300" 
+    style="background: transparent; box-shadow: none; border: none;"
+  />
+   <h1>ResumeCraft AI</h1>
+</div>
 
-## Description
-
-ResumeCraft AI helps users create tailored, ATS-friendly resumes and personalized cover letters based on job descriptions. Users can upload existing resumes, maintain a profile, and chat with an AI assistant to fine-tune their application materials.
+ResumeCraft AI is a full-stack resume and cover letter generator built with React + Flask + OpenAI. It helps users create tailored, ATS-friendly resumes and personalized cover letters based on job descriptions. Users can upload existing resumes, maintain a profile, and chat with an AI assistant to fine-tune their application materials.
 
 ---
 
