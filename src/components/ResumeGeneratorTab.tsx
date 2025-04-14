@@ -412,7 +412,7 @@ const ResumeGeneratorTab = ({ onComplete }) => {
               <li>The system will match your profile with job requirements</li>
               <li>Add detailed work experiences in your profile for better matching</li>
               <li>Include diverse skills in your profile to showcase your versatility</li>
-              <li>Upload an existing resume to ensure the generated resue cover all details</li>
+              <li>Upload an existing resume to ensure the generated resume cover all details</li>
             </ul>
           </div>
         </CardContent>
