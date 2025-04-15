@@ -93,7 +93,7 @@ To fast-track your experience, try the app with a pre-filled example based on **
    - Upload George’s resume.
    - Click **Generate Resume** to instantly build a tailored resume and cover letter.
 
-This lets you skip form-filling and directly experience the AI-powered workflow.
+This lets you skip form-filling and directly experience the AI workflow.
 
 ---
 ### 📦 Tech Stack
