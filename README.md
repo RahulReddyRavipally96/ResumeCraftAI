@@ -16,7 +16,7 @@ ResumeCraft AI is a full-stack resume and cover letter generator built with Reac
 
 ### Step 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/ResumeCraftAI.git
+git clone https://github.com/RahulReddyRavipally96/ResumeCraftAI.git
 cd ResumeCraftAI
 ```
 ### Step 2. **Add Your OpenAI API Key**
